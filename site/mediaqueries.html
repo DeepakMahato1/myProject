@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Media Query
+</title>
+<style>
+
+/***Base style ***/
+h1{
+	margin-bottom:15px;
+}
+p{
+	border:1px solid black;
+	margin-bottom:15px;
+}
+#p1{
+	background-color:#d39311;
+	width:300px;
+	height:300px;
+}
+#p2{
+	background-color:red;
+	width:150px;
+	height:150px;
+}
+/*** Large device only ***/
+@media (min-width:1200px){
+#p1 {
+   width:80%;  
+  }
+  #p2{
+   width:150px;
+   height:150px;
+  }
+}
+
+/***Media devices only ***/
+@media (min-width:992px)and(max-width:1199px;){
+#p1{
+	width:50%;
+}
+#p2{
+	width:100px;
+	height:100px;
+  }
+}
+</style>
+</head>
+<body>
+<h1>Media Queries</h1>
+<p id="p1">I found this line graph on the web and it's attributed to some research done by Morgan Stanley Research. I don't really know how exact any of these numbers are, but the general point is well known. Browsing on the mobile devices exceeds that of regular desktop browser. And if you look at this graph, that sounds just about right, that this actually happened around 2013, 2014. So it's been a little bit since that happened. So, the point is, you just can't ignore mobile. You have to design your sites for mobile, as well. But when it comes to mobile, there's so many devices. So, which devices do we want to target and which devices do we want to support? And the answer is really, all of them. You can't really afford to ignore any of them. There's such a plethora of these devices out there, and ignoring some of them would ignore a chunk of your user base. So how does responsive design help us do that? Well, I think the answer lies in what responsive design is. So what is a responsive web site? Well, that's a site that's designed to adapt its layout to the viewing environment by using fluid, proportion-based grids, flexible images, and CSS3 media queries. And by proportion-based grids, what we mean is or hinting to Is that the width of these grids or these columns as we'll see in a moment should be specified using a percentage. I really like this visualization that somebody put together and put on Wikipedia when you search for responsive design client. So this is one of the images on that page. And this is basically paraphrasing or maybe actually taking verbatim, a quote from Bruce Lee, a famous martial arts expert. And basically it says you put water in a a cup, it becomes the cup. You put water in a bottle, it becomes the bottle. And you put it in a teapot, it becomes the teapot. And the idea is pretty simple that content should be like water. You put it in whatever different devices you put it into and it should still display, the content should be the same, and the information conveyed should be the same. And perhaps the only thing that's different is the shape of that content, right? The way it's being displayed. So using kind of the idea of the previous graphic, we can certainly understand now, that the site's layout is supposed to adapt to the size of the device. In practice, most of the time if not all the time, this means that the site should adjust based on the width of the device. And I should also point out that content verbosity or its visual delivery may change. For example for a restaurant site, a phone number which used to be displayed somewhere in the site without attracting too much attention to itself for a desktop version of that site Is now front and center, and the most prominent item on the page on a mobile site. And that's, perhaps, because we want people to have their phones.</p>
+<p id="p2">The largest part of responsive design is, obviously, the layout.</p>
+</body>
+</html>
